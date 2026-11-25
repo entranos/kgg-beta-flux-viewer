@@ -80,7 +80,7 @@ async function decryptData(encryptedData, key, iv) {
 async function decryptZipFile(passphrase) {
   try {
     // Fetch the encrypted file
-    const response = await fetch('public/ds25112026gu.enc.json');
+    const response = await fetch('public/ds25112026kggbeta.enc.json');
     if (!response.ok) {
       throw new Error(`Failed to fetch encrypted file: ${response.status}`);
     }
@@ -436,7 +436,7 @@ function generateSankeyLibrary (workbook) {
    const usernameInput = document.createElement('input');
    usernameInput.type = 'text';
    usernameInput.name = 'username';
-   usernameInput.value = 'NBNL';
+   usernameInput.value = 'KGG-BETA';
    usernameInput.autocomplete = 'username';
    usernameInput.style.display = 'none';
    usernameInput.setAttribute('aria-hidden', 'true');
